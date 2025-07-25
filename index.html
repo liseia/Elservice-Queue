@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Antrian Service</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Elservice.png" alt="Logo Elservice" id="elservice">
+            </div>
+            <div class="items" id="items">
+                <a href="#home">Ambil Antrian</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="background-image"></div>
+        <div class="sapaan" id="sapaan">
+            <p id="jamSapa">Halo</p>
+            <h1>Selamat Datang di <span>Antrian Elservice</span></h1>
+            <p>Membawa Perangkat Anda Kembali ke Performa Puncak</p>
+        </div>
+        <div class="antri" id="noan">
+            <h2>NOMOR ANTRIAN ANDA</h2>
+            <p>press the button to get your number</p>
+            <div id="nomor-terkini">-</div>
+            <button id="ambil-nomor-btn">Ambil Antrian</button>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/elisiaac/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtu.be/phRn9Thc1zc?si=xjtY872l_9RsK7Pe" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://youtu.be/BBpIV9A1PXc?si=IWRVL1XVgiNxF4Cj" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </section>
+
+    <!-- Modal untuk notifikasi -->
+    <div id="notification-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3 id="modal-title">Berhasil!</h3>
+            <p id="modal-message">Nomor antrian Anda adalah: X</p>
+            <button id="modal-close-btn" class="modal-close-btn">Tutup</button>
+        </div>
+    </div>
+    <script src="1script.js"></script>
+</body>
+</html>
